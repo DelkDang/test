@@ -1,0 +1,158 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #def2f1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App-header {
+  min-height: 100vh;
+  font-size: 15px;
+  color: #17252A;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #feffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #17252A;
+}
+
+.ran-container {
+  height: 100%;
+  width: 310px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #3aafa9;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .ran-btn {
+    width: 200px;
+    height: 50px;
+    min-height: 50px;
+    margin: 10px 0;
+    background-color: #feffff;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  .ran-btn:hover,
+  .ran-btn:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: rgba(0, 0, 0, 0.65);
+  }
+
+  .ran-btn:hover {
+    transform: translateY(-1px);
+  }
+
+  .ran-btn:active {
+    background-color: #F0F0F1;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
+  }
+
+  .ran-content {
+    width: inherit;
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: 500;
+
+
+    img {
+      height: 135px;
+      width: 90px;
+      border: 2px solid #17252A;
+      box-sizing: border-box;
+      margin-top: 10px;
+      margin-right: 10px;
+    }
+  }
+}
+
+
+.content {
+  margin-left: 310px;
+  height: 100vh;
+  box-sizing: unset;
+  position: static;
+  box-sizing: border-box;
+
+  .similar-container {
+    width: 90%;
+    border: 3px solid #17252A;
+    border-radius: 10px;
+    background-color: #feffff;
+    margin: 0 auto;
+    margin-top: 2.5%;
+
+
+    .similar-header {
+      display: flex;
+      margin: 5px 10px;
+
+      .similar-title {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        width: calc(100% - 30px);
+      }
+
+      .similar-btn {
+        font-size: 20px;
+        display: flex;
+        width: 30px;
+        align-items: center;
+        font-weight: 900;
+        justify-content: center;
+        cursor: pointer;
+      }
+
+      .similar-btn:hover,
+      .similar-btn:focus {
+        color: #3aafa9;
+      }
+    }
+
+
+    .img {
+      height: 22%;
+      width: 14.2%;
+      border: 2px solid #17252A;
+      box-sizing: border-box;
+      margin: 20px 0;
+      margin-left: 2%;
+
+    }
+
+    .img:first-child {
+      margin-left: 0;
+    }
+  }
+}
